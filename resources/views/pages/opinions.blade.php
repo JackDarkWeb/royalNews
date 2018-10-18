@@ -15,7 +15,7 @@
                     @foreach($une as $detail)
                         <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
                             <h4>{{$detail->title}}</h4>
-                            <img src="https://placehold.it/350x220?text=IMAGE" class="img-responsive img-thumbnail" style="width:100%" alt="Image">
+                            <img src="http://127.0.0.1/urielAdmin/public/storage/pictures/{{$detail->pictures}}" class="img-responsive img-thumbnail" style="width:100%" alt="Image">
                             <p>{{$detail->content}}</p>
                         </a>
                     @endforeach
